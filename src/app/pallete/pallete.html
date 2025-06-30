@@ -1,0 +1,6 @@
+<div class="contnet">
+  <div class="colur-box" (click)="selectColour()"  (keydown)="selectColour()">
+    <div class="colour" [ngStyle]="{ 'background-color': colour?.colour?.[0] }"></div>
+    <div class="colour" [ngStyle]="{ 'background-color': colour?.colour?.[1] }"></div></div>
+  <p>{{colour?.name}}</p>
+</div>
